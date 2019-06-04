@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Music Ocean</title>
+    <meta charset="utf-8">
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="img5.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <style>
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+p{
+  color: white;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+ .button {
+  background-color: ;
+  border: 2px solid;
+  color: ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  border-color: white;
+}
+.button2 {
+ background-color: ;
+ border: 2px solid;
+ color: ;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 12px;
+ border-color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron {
+  background-image: url("index.jpeg");
+  height: 500px;
+}
+   </style>
+
+  </head>
+  <body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="vid.mp4" type="video/mp4">
+</video>
+
+
+
+
+    <div class="container">
+      <p style="width:100%; color:white; font-size:72px;font-style: italic; text-align: center;">MUSIC OCEAN</p>
+      </div>
+<div class="row"  style="height:2000px;background-color: #cccccc">
+         <div class="col-sm-10" style="height:2000px;background-color:;margin-left:110px;margin-top:20px">
+
+           <div class="row" style="border-style:groove;border-color:#f2f2f2;">
+          <div class="col-sm-3" style="margin-top:12px;">
+            <b> Musics </b>
+           </div>
+           <div class="col-sm-6">
+
+          </div>
+          <div class="col-sm-3" style="margin-top:3px;">
+          <input type="text" placeholder="Search your favourite...." name="search">
+
+          </div>
+        </div>
+    <div class="row " style="margin-top:10px;">
+          <div class="col-sm-2">
+            <p style="text-align:center"><b>Aira.</b><br>
+            Megadhutham....</p>
+            <img src="IMG.jpeg"width="330px" height="500px">
+            <center>
+          <button type="button" class="button" id="start"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+           <button type="button" class="button2" id="stop"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+         </center>
+         </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <p style="text-align:center"><b>Imaikka nodikal.</b><br>
+        Neeyum naanum......</p>
+   <img src="DTbb6PhVwAEyl5p.jpg"width="330px" height="500px">
+    <center>
+  <button type="button" class="button" id="start1"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+   <button type="button" class="button2" id="stop1"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+ </center>
+            </div>
+    <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+        <p style="text-align:center"><b>vaalu.</b><br>
+          Maruvaarththai pesathee......</p>
+        <img src="80fdbe255b_345x518_4c726a541b.jpg"width="330px" height="500px">
+        <center>
+      <button type="button" class="button" id="start2"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+       <button type="button" class="button2" id="stop2"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+     </center>
+        </div>
+      <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <p style="text-align:center"><b>Bahubali-02.</b><br>
+            Oree oar ooril......</p>
+          <img src="img6.jpg"width="330px" height="500px">
+          <center>
+        <button type="button" class="button" id="start3"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+         <button type="button" class="button2" id="stop3"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+       </center>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+              <div class="col-sm-2">
+                <p style="text-align:center"><b> NGK</b><br>
+                  Naanaagiya Nadhimoolamae</p>
+                <img src="ngk_155919190740.jpg" width="330px" height="500px">
+                <center>
+              <button type="button" class="button" id="start4"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+               <button type="button" class="button2" id="stop4"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+             </center>
+             </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <p style="text-align:center"><b>Thuppakki munai.</b><br>
+            Maruvaarthai</p>
+          <img src="43771-thuppakki2bmunai0.jpg"width="330px" height="500px">
+          <center>
+        <button type="button" class="button" id="start5"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+         <button type="button" class="button2" id="stop5"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+       </center>
+          </div>
+        <div class="col-sm-1"></div>
+          <div class="col-sm-2">
+            <p style="text-align:center"><b>Power Paandi</b><br>
+              Paarthen</p>
+            <img src="power-paandi-20170412104519-15325.jpg"width="330px" height="500px">
+            <center>
+          <button type="button" class="button" id="start6"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+           <button type="button" class="button2" id="stop6"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+         </center>
+            </div>
+          <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+              <p style="text-align:center"><b>Maragatha Naanayam</b><br>
+                Nee Kavithaigala</p>
+              <img src="Maragadha-Naanayam-movie-mp3-songs-sensongsmp3co.jpg" width="330px" height="500px">
+              <center>
+            <button type="button" class="button" id="start7"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+             <button type="button" class="button2" id="stop7"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+           </center>
+              </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                  <div class="col-sm-2">
+                    <p style="text-align:center"><b>Vishwasham</b><br>
+                      Bale Bale Bale</p>
+                    <img src="img10.jpg" width="330px" height="500px">
+                    <center>
+                  <button type="button" class="button" id="start8"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+                   <button type="button" class="button2" id="stop8"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+                 </center>
+                 </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+              <p style="text-align:center"><b>Bahubali 2</b><br>
+                Orey Oar Ooril</p>
+              <img src="img2.jpg"width="330px" height="500px">
+              <center>
+            <button type="button" class="button" id="start9"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+             <button type="button" class="button2" id="stop9"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+           </center>
+              </div>
+            <div class="col-sm-1"></div>
+              <div class="col-sm-2">
+                <p style="text-align:center"><b>Neruppuda</b><br>
+                  Aalangiliyae</p>
+                <img src="movieposter.jpg"width="330px" height="500px">
+                <center>
+              <button type="button" class="button" id="start10"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+               <button type="button" class="button2" id="stop10"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+             </center>
+                </div>
+              <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                  <p style="text-align:center"><b>Mohini</b><br>
+                    Hey Un Kangal Pesuthey</p>
+                  <img src="img12.jpg"width="330px" height="500px">
+                  <center>
+                <button type="button" class="button" id="start11"><i class="fa fa-play-circle-o" style="font-size:36px;"></i></button>
+                 <button type="button" class="button2" id="stop11"><i class="fa fa-pause-circle-o" style="font-size:36px"></i></button>
+               </center>
+                  </div>
+                </div>
+      </div>
+    </div>
+    <script src="js/jquery.flipster.js"></script>
+<script>
+<!--
+$(function () {
+$(".flipster").flipster({
+style: 'carousel',
+start: 0
+});
+});
+-->
+</script>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+  </body>
+</html>
